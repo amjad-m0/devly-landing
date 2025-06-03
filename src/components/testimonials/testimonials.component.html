@@ -1,0 +1,22 @@
+<section id="testimonials" class="bg-slate-50 dark:bg-gray-950 py-24 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Client Testimonials</h2>
+    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-16">
+      Hear from our satisfied partners on how we helped them transform their ideas into successful products.
+    </p>
+
+    <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div *ngFor="let t of testimonials" class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md text-left hover:shadow-lg transition">
+        <div class="flex items-center gap-4 mb-4">
+          <img [src]="t.avatar" class="w-12 h-12 rounded-full" alt="avatar">
+          <div>
+            <h4 class="font-semibold text-gray-900 dark:text-white">{{ t.name }}</h4>
+            <p class="text-sm text-gray-500 dark:text-gray-400">{{ t.company }}</p>
+          </div>
+        </div>
+        <p class="text-gray-700 dark:text-gray-300 italic">"{{ t.quote }}"</p>
+      </div>
+    </div>
+  </div>
+</section>
+

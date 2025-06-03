@@ -1,0 +1,8 @@
+<section id="clients" class="bg-gray-100 dark:bg-gray-950 py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-10">Trusted by Leading Brands</h2>
+  <div class="flex flex-wrap justify-center items-center gap-10 max-w-5xl mx-auto">
+    <div *ngFor="let logo of logos" class="opacity-70 hover:opacity-100 transition">
+      <img [src]="logo.src" [alt]="logo.name" class="h-12 object-contain">
+    </div>
+  </div>
+</section>

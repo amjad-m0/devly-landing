@@ -1,0 +1,24 @@
+<section id="contact" class="bg-white dark:bg-gray-950 py-24 px-6">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">Get in Touch</h2>
+    <p class="text-lg text-gray-600 dark:text-gray-400 mb-12">
+      Let’s start a conversation. Whether you have a project idea, feedback, or just want to say hi.
+    </p>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-6 text-left">
+      <input formControlName="name" placeholder="Your Name" class="w-full px-4 py-3 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-indigo-500 outline-none" />
+
+      <input formControlName="email" type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-indigo-500 outline-none" />
+
+      <textarea formControlName="message" rows="5" placeholder="Your Message" class="w-full px-4 py-3 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white border border-transparent focus:ring-2 focus:ring-indigo-500 outline-none resize-none"></textarea>
+
+      <button type="submit" [disabled]="isSubmitting || contactForm.invalid"
+        class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-md transition">
+        {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+      </button>
+    </form>
+
+    <div *ngIf="success" class="text-green-600 mt-6">Message sent successfully!</div>
+    <div *ngIf="error" class="text-red-600 mt-6">{{ error }}</div>
+  </div>
+</section>
