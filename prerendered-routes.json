@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/devly-landing": {},
+    "/devly-landing/about": {},
+    "/devly-landing/contact": {},
+    "/devly-landing/footer": {},
+    "/devly-landing/services": {},
+    "/devly-landing/testmonials": {}
+  }
+}
