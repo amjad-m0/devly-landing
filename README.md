@@ -2,6 +2,14 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
 
+Landing page for Devly - built using HTML, CSS, and JavaScript.
+
+## Features
+- Responsive layout
+- Contact form
+- Smooth scrolling
+
+## How to Run
 ## Development server
 
 To start a local development server, run:
