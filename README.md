@@ -1,67 +1,57 @@
-# DevlyLanding
+# 🚀 Devly Landing Page
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+A modern, responsive landing page for a tech services company built with **Angular**, **.NET Core (Fake API)**, and **Tailwind CSS**.  
+Designed to attract business clients with a clean UI, smooth UX, and rich frontend interactions.
 
-Landing page for Devly - built using HTML, CSS, and JavaScript.
+---
 
-## Features
-- Responsive layout
-- Contact form
-- Smooth scrolling
+## 📸 Preview
 
-## How to Run
-## Development server
+![Hero Section](./screenshots/hero.png)
+![Services](./screenshots/services.png)
+![Dark Mode](./screenshots/darkmode.png)
 
-To start a local development server, run:
+---
+
+## ✨ Features
+
+- ✅ Animated hero section with video background
+- ✅ Smooth scrolling & scrollspy navigation
+- ✅ Light/Dark mode toggle
+- ✅ Modular components (About, Services, Portfolio, Contact, etc.)
+- ✅ Testimonials & client logos
+- ✅ Contact form (sends email via backend using MailKit)
+- ✅ Responsive and mobile-friendly
+- ✅ Tailwind CSS styling
+
+---
+
+## 🛠 Tech Stack
+
+| Frontend         | Backend (API وهمي)       |
+|------------------|--------------------------|
+| Angular 17       | ASP.NET Core 8 (API Only)|
+| Tailwind CSS     | MailKit (email sending)  |
+| TypeScript       | CORS Enabled             |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
 
 ```bash
+git clone https://github.com/amjadsafouh/devly-landing.git
+cd devly-landing
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+3. Run Angular App Locally
+bash
+Copy
+Edit
 ng serve
-```
+Open http://localhost:4200 in your browser.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
